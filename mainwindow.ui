@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuNew">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>新建</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Source/Images/images.qrc">
+       <normaloff>:/Newlook/Newlook/add.bmp</normaloff>:/Newlook/Newlook/add.bmp</iconset>
+     </property>
+     <property name="separatorsCollapsible">
+      <bool>false</bool>
+     </property>
+     <addaction name="actionNSrcCode"/>
+    </widget>
+    <addaction name="menuNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionCloseAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <widget class="QMenu" name="menuInsert">
+     <property name="title">
+      <string>插入</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Source/Images/images.qrc">
+       <normaloff>:/Newlook/Newlook/insert.bmp</normaloff>:/Newlook/Newlook/insert.bmp</iconset>
+     </property>
+     <addaction name="actionFOR"/>
+     <addaction name="actionWHILE"/>
+     <addaction name="actionDO_WHILE"/>
+     <addaction name="actionIF"/>
+     <addaction name="actionSWITCH"/>
+     <addaction name="actionCLASS"/>
+     <addaction name="separator"/>
+     <addaction name="actionIFDEF"/>
+     <addaction name="actionIFNDEF"/>
+     <addaction name="actionIFDEF_ELSE"/>
+     <addaction name="actionIFNDEF_ELSE"/>
+    </widget>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionSelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="menuInsert"/>
+    <addaction name="separator"/>
+    <addaction name="actionCollectAll"/>
+    <addaction name="actionExpandall"/>
+   </widget>
+   <widget class="QMenu" name="menu_Search">
+    <property name="title">
+     <string>搜索</string>
+    </property>
+    <addaction name="actionSearch"/>
+    <addaction name="action_gotoLine"/>
+   </widget>
+   <widget class="QMenu" name="menu_Run">
+    <property name="title">
+     <string>运行</string>
+    </property>
+    <addaction name="actionCompile"/>
+    <addaction name="actionRun"/>
+    <addaction name="actionCompRun"/>
+    <addaction name="separator"/>
+    <addaction name="actionJumpToBP"/>
+    <addaction name="actionSwitchBP"/>
+    <addaction name="actionDebug"/>
+    <addaction name="separator"/>
+    <addaction name="actionStopExecute"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Search"/>
+   <addaction name="menu_Run"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actionNSrcCode"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSaveAll"/>
+   <addaction name="actionSaveAs"/>
+   <addaction name="actionClose"/>
+   <addaction name="actionCloseAll"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="actionSearch"/>
+   <addaction name="separator"/>
+   <addaction name="actionCompile"/>
+   <addaction name="actionRun"/>
+   <addaction name="actionCompRun"/>
+   <addaction name="separator"/>
+   <addaction name="actionDebug"/>
+   <addaction name="separator"/>
+   <addaction name="actionStopExecute"/>
+   <addaction name="separator"/>
+   <addaction name="action_gotoLine"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/opnproj.bmp</normaloff>:/Newlook/Newlook/opnproj.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开项目或文件...</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/save.bmp</normaloff>:/Newlook/Newlook/save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/saveas.bmp</normaloff>:/Newlook/Newlook/saveas.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>另存为...</string>
+   </property>
+  </action>
+  <action name="actionSaveProjAs">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/saveas.bmp</normaloff>:/Newlook/Newlook/saveas.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>另存项目为...</string>
+   </property>
+  </action>
+  <action name="actionNSrcCode">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/newsrc.bmp</normaloff>:/Newlook/Newlook/newsrc.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>源代码</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/newproj.bmp</normaloff>:/Newlook/Newlook/newproj.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>项目</string>
+   </property>
+  </action>
+  <action name="actionNTemplate">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/newtemp.bmp</normaloff>:/Newlook/Newlook/newtemp.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>模板</string>
+   </property>
+  </action>
+  <action name="actionNClass">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Classparser/Classparser/class.bmp</normaloff>:/Classparser/Classparser/class.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>类</string>
+   </property>
+  </action>
+  <action name="actionSaveAll">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/saveall.bmp</normaloff>:/Newlook/Newlook/saveall.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>全部保存</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/closefl.bmp</normaloff>:/Newlook/Newlook/closefl.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionCloseProj">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/close.bmp</normaloff>:/Newlook/Newlook/close.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>关闭项目</string>
+   </property>
+  </action>
+  <action name="actionCloseAll">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/closeall.bmp</normaloff>:/Newlook/Newlook/closeall.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>全部关闭</string>
+   </property>
+  </action>
+  <action name="actionClrHis">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/clrhist.bmp</normaloff>:/Newlook/Newlook/clrhist.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>清除历史</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/close.bmp</normaloff>:/Newlook/Newlook/close.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/undo.bmp</normaloff>:/Newlook/Newlook/undo.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/redo.bmp</normaloff>:/Newlook/Newlook/redo.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/cut.bmp</normaloff>:/Newlook/Newlook/cut.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/copy.bmp</normaloff>:/Newlook/Newlook/copy.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>拷贝</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/paste.bmp</normaloff>:/Newlook/Newlook/paste.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>选择全部</string>
+   </property>
+  </action>
+  <action name="actionComment">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>注释</string>
+   </property>
+  </action>
+  <action name="actionUncomment">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>取消注释</string>
+   </property>
+  </action>
+  <action name="actionSetComment">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>设置注释</string>
+   </property>
+  </action>
+  <action name="actionCommentInLine">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>切换行内注释</string>
+   </property>
+  </action>
+  <action name="actionIndent">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>缩进</string>
+   </property>
+  </action>
+  <action name="actionRemoveIndent">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>取消缩进</string>
+   </property>
+  </action>
+  <action name="actionCollectAll">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>全部收起</string>
+   </property>
+  </action>
+  <action name="actionExpandAll">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>全部展开</string>
+   </property>
+  </action>
+  <action name="actionDateTime">
+   <property name="text">
+    <string>日期/时间</string>
+   </property>
+  </action>
+  <action name="actionHeadFile">
+   <property name="text">
+    <string>文件头注释模块</string>
+   </property>
+  </action>
+  <action name="actionFOR">
+   <property name="text">
+    <string>for()</string>
+   </property>
+  </action>
+  <action name="actionWHILE">
+   <property name="text">
+    <string>while()</string>
+   </property>
+  </action>
+  <action name="actionDO_WHILE">
+   <property name="text">
+    <string>do-while()</string>
+   </property>
+  </action>
+  <action name="actionIF">
+   <property name="text">
+    <string>if()</string>
+   </property>
+  </action>
+  <action name="action_switch">
+   <property name="text">
+    <string> switch()</string>
+   </property>
+  </action>
+  <action name="actionSWITCH">
+   <property name="text">
+    <string>switch()</string>
+   </property>
+  </action>
+  <action name="actionCLASS">
+   <property name="text">
+    <string>Class</string>
+   </property>
+  </action>
+  <action name="actionCLASSTEMP">
+   <property name="text">
+    <string>ClassHeaderTemplate</string>
+   </property>
+  </action>
+  <action name="actionIFDEF">
+   <property name="text">
+    <string>#ifdef</string>
+   </property>
+  </action>
+  <action name="actionIFNDEF">
+   <property name="text">
+    <string>#ifndef</string>
+   </property>
+  </action>
+  <action name="actionIFDEF_ELSE">
+   <property name="text">
+    <string>#ifdef/else</string>
+   </property>
+  </action>
+  <action name="actionIFNDEF_ELSE">
+   <property name="text">
+    <string>#ifndef_else</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/search.bmp</normaloff>:/Newlook/Newlook/search.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </action>
+  <action name="actionJumpToFunc">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/toolbar.bmp</normaloff>:/Newlook/Newlook/toolbar.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>跳至函数</string>
+   </property>
+  </action>
+  <action name="actionNewUnit">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/newsrc.bmp</normaloff>:/Newlook/Newlook/newsrc.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>新建单元</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/addsrc.bmp</normaloff>:/Newlook/Newlook/addsrc.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/remsrc.bmp</normaloff>:/Newlook/Newlook/remsrc.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>移除</string>
+   </property>
+  </action>
+  <action name="actionAttribute">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/projopt.bmp</normaloff>:/Newlook/Newlook/projopt.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>项目属性</string>
+   </property>
+  </action>
+  <action name="actionCompile">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/compile.bmp</normaloff>:/Newlook/Newlook/compile.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编译</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/run.bmp</normaloff>:/Newlook/Newlook/run.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </action>
+  <action name="actionCompRun">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/comprun.bmp</normaloff>:/Newlook/Newlook/comprun.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编译运行</string>
+   </property>
+  </action>
+  <action name="actionRecompile">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/rebuild.bmp</normaloff>:/Newlook/Newlook/rebuild.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>全部重新编译</string>
+   </property>
+  </action>
+  <action name="actionJumpToBP">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>转到断点</string>
+   </property>
+  </action>
+  <action name="actionSwitchBP">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/empty.bmp</normaloff>:/Newlook/Newlook/empty.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>切换断点</string>
+   </property>
+  </action>
+  <action name="actionDebug">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/debug.bmp</normaloff>:/Newlook/Newlook/debug.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>调试</string>
+   </property>
+  </action>
+  <action name="actionStopExecute">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/close.bmp</normaloff>:/Newlook/Newlook/close.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>停止执行</string>
+   </property>
+  </action>
+  <action name="actionCompOpt">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/compopt.bmp</normaloff>:/Newlook/Newlook/compopt.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编译选项</string>
+   </property>
+  </action>
+  <action name="actionEnvOpt">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/envopt.bmp</normaloff>:/Newlook/Newlook/envopt.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>环境选项</string>
+   </property>
+  </action>
+  <action name="actionEditorOpt">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/makefl.bmp</normaloff>:/Newlook/Newlook/makefl.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>编辑器选项</string>
+   </property>
+  </action>
+  <action name="actionShortcutKey">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/run.bmp</normaloff>:/Newlook/Newlook/run.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>快捷键选项</string>
+   </property>
+  </action>
+  <action name="actionConfigTools">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/tools.bmp</normaloff>:/Newlook/Newlook/tools.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>配置工具</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+  </action>
+  <action name="actionExpandall">
+   <property name="text">
+    <string>全部展开</string>
+   </property>
+  </action>
+  <action name="action_gotoLine">
+   <property name="icon">
+    <iconset resource="Source/Images/images.qrc">
+     <normaloff>:/Newlook/Newlook/goto.bmp</normaloff>:/Newlook/Newlook/goto.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>转到</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Source/Images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,277 @@
+<RCC>
+    <qresource prefix="/Newlook">
+        <file>Newlook/about.bmp</file>
+        <file>Newlook/add.bmp</file>
+        <file>Newlook/addbook.bmp</file>
+        <file>Newlook/addsrc.bmp</file>
+        <file>Newlook/arricon.bmp</file>
+        <file>Newlook/bughlp.bmp</file>
+        <file>Newlook/close.bmp</file>
+        <file>Newlook/closeall.bmp</file>
+        <file>Newlook/closefl.bmp</file>
+        <file>Newlook/clrhist.bmp</file>
+        <file>Newlook/clsall.bmp</file>
+        <file>Newlook/compile.bmp</file>
+        <file>Newlook/compopt.bmp</file>
+        <file>Newlook/compres.bmp</file>
+        <file>Newlook/compresx.bmp</file>
+        <file>Newlook/comprun.bmp</file>
+        <file>Newlook/copy.bmp</file>
+        <file>Newlook/cut.bmp</file>
+        <file>Newlook/debug.bmp</file>
+        <file>Newlook/dos.bmp</file>
+        <file>Newlook/empty.bmp</file>
+        <file>Newlook/envopt.bmp</file>
+        <file>Newlook/explor.bmp</file>
+        <file>Newlook/export.bmp</file>
+        <file>Newlook/gobook.bmp</file>
+        <file>Newlook/goto.bmp</file>
+        <file>Newlook/help.bmp</file>
+        <file>Newlook/homepg.bmp</file>
+        <file>Newlook/icon.bmp</file>
+        <file>Newlook/insert.bmp</file>
+        <file>Newlook/makefl.bmp</file>
+        <file>Newlook/minall.bmp</file>
+        <file>Newlook/newlook.qrc</file>
+        <file>Newlook/newproj.bmp</file>
+        <file>Newlook/newsrc.bmp</file>
+        <file>Newlook/newtemp.bmp</file>
+        <file>Newlook/next.bmp</file>
+        <file>Newlook/opnproj.bmp</file>
+        <file>Newlook/package.bmp</file>
+        <file>Newlook/packman.bmp</file>
+        <file>Newlook/paste.bmp</file>
+        <file>Newlook/prev.bmp</file>
+        <file>Newlook/print.bmp</file>
+        <file>Newlook/projopt.bmp</file>
+        <file>Newlook/rebuild.bmp</file>
+        <file>Newlook/redo.bmp</file>
+        <file>Newlook/remsrc.bmp</file>
+        <file>Newlook/reopen.bmp</file>
+        <file>Newlook/resrc.bmp</file>
+        <file>Newlook/run.bmp</file>
+        <file>Newlook/save.bmp</file>
+        <file>Newlook/saveall.bmp</file>
+        <file>Newlook/saveas.bmp</file>
+        <file>Newlook/screen.bmp</file>
+        <file>Newlook/search.bmp</file>
+        <file>Newlook/srcagain.bmp</file>
+        <file>Newlook/srchrep.bmp</file>
+        <file>Newlook/syntcheck.bmp</file>
+        <file>Newlook/temphlp.bmp</file>
+        <file>Newlook/tile.bmp</file>
+        <file>Newlook/toolbar.bmp</file>
+        <file>Newlook/tools.bmp</file>
+        <file>Newlook/tutor.bmp</file>
+        <file>Newlook/undo.bmp</file>
+        <file>Newlook/update.bmp</file>
+    </qresource>
+    <qresource prefix="/Associations">
+        <file>Icons/Book.ico</file>
+        <file>Icons/Communication.ico</file>
+        <file>Icons/Console.ico</file>
+        <file>Icons/ConsoleToo.ico</file>
+        <file>Icons/Crazy.ico</file>
+        <file>Icons/Danger.ico</file>
+        <file>Icons/DLL.ico</file>
+        <file>Icons/Documentation.ico</file>
+        <file>Icons/Edit.ico</file>
+        <file>Icons/Editor.ico</file>
+        <file>Icons/Empty.ico</file>
+        <file>Icons/File Management.ico</file>
+        <file>Icons/Folder.ico</file>
+        <file>Icons/Food.ico</file>
+        <file>Icons/Games.ico</file>
+        <file>Icons/Goofy.ico</file>
+        <file>Icons/mainicon.ico</file>
+        <file>Icons/Movie.ico</file>
+        <file>Icons/Multimedia.ico</file>
+        <file>Icons/Paint.ico</file>
+        <file>Icons/Pizza.ico</file>
+        <file>Icons/Rescue.ico</file>
+        <file>Icons/Smile.ico</file>
+        <file>Icons/Software.ico</file>
+        <file>Icons/StaticLib.ico</file>
+        <file>Icons/Ufo.ico</file>
+        <file>Icons/Window.ico</file>
+        <file>Icons/Windows.ico</file>
+        <file>Associations/c.ico</file>
+        <file>Associations/cpp.ico</file>
+        <file>Associations/dev.ico</file>
+        <file>Associations/devpackage.ico</file>
+        <file>Associations/devpak.ico</file>
+        <file>Associations/h.ico</file>
+        <file>Associations/hpp.ico</file>
+        <file>Associations/ide.ico</file>
+        <file>Associations/IDE2.ico</file>
+        <file>Associations/o.ico</file>
+        <file>Associations/obj.ico</file>
+        <file>Associations/rc.ico</file>
+        <file>Associations/template.ico</file>
+    </qresource>
+    <qresource prefix="/Classparser">
+        <file>Classparser/class_folder.bmp</file>
+        <file>Classparser/class.bmp</file>
+        <file>Classparser/method_inherited_protected.bmp</file>
+        <file>Classparser/method_inherited.bmp</file>
+        <file>Classparser/method_private.bmp</file>
+        <file>Classparser/method_protected.bmp</file>
+        <file>Classparser/method_public.bmp</file>
+        <file>Classparser/var_inherited_protected.bmp</file>
+        <file>Classparser/var_inherited.bmp</file>
+        <file>Classparser/var_private.bmp</file>
+        <file>Classparser/var_protected.bmp</file>
+        <file>Classparser/var_public.bmp</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>Icons/Book.ico</file>
+        <file>Icons/Communication.ico</file>
+        <file>Icons/Console.ico</file>
+        <file>Icons/ConsoleToo.ico</file>
+        <file>Icons/Crazy.ico</file>
+        <file>Icons/Danger.ico</file>
+        <file>Icons/DLL.ico</file>
+        <file>Icons/Documentation.ico</file>
+        <file>Icons/Edit.ico</file>
+        <file>Icons/Editor.ico</file>
+        <file>Icons/Empty.ico</file>
+        <file>Icons/File Management.ico</file>
+        <file>Icons/Folder.ico</file>
+        <file>Icons/Food.ico</file>
+        <file>Icons/Games.ico</file>
+        <file>Icons/Goofy.ico</file>
+        <file>Icons/mainicon.ico</file>
+        <file>Icons/Movie.ico</file>
+        <file>Icons/Multimedia.ico</file>
+        <file>Icons/Paint.ico</file>
+        <file>Icons/Pizza.ico</file>
+        <file>Icons/Rescue.ico</file>
+        <file>Icons/Smile.ico</file>
+        <file>Icons/Software.ico</file>
+        <file>Icons/StaticLib.ico</file>
+        <file>Icons/Ufo.ico</file>
+        <file>Icons/Window.ico</file>
+        <file>Icons/Windows.ico</file>
+    </qresource>
+    <qresource prefix="/Blue">
+        <file>Blue/About.bmp</file>
+        <file>Blue/Add.bmp</file>
+        <file>Blue/Arrange%20Icons.bmp</file>
+        <file>Blue/Bloodshed%20Homepage.bmp</file>
+        <file>Blue/Bookmarks.bmp</file>
+        <file>Blue/Cancel.bmp</file>
+        <file>Blue/Check%20for%20Update.bmp</file>
+        <file>Blue/Close.bmp</file>
+        <file>Blue/Compile.bmp</file>
+        <file>Blue/Compile%20And%20Run.bmp</file>
+        <file>Blue/Compiler%20Options.bmp</file>
+        <file>Blue/Compiler%20Results.bmp</file>
+        <file>Blue/Compiler%20ResultsX.bmp</file>
+        <file>Blue/Copy.bmp</file>
+        <file>Blue/Cut.bmp</file>
+        <file>Blue/Debug.bmp</file>
+        <file>Blue/Delete.bmp</file>
+        <file>Blue/Document of Project Manager.bmp</file>
+        <file>Blue/Down.bmp</file>
+        <file>Blue/EditorOptions.bmp</file>
+        <file>Blue/Environment Options.bmp</file>
+        <file>Blue/Execute.bmp</file>
+        <file>Blue/Exit.bmp</file>
+        <file>Blue/Explorer.bmp</file>
+        <file>Blue/Export.bmp</file>
+        <file>Blue/Find again.bmp</file>
+        <file>Blue/Find.bmp</file>
+        <file>Blue/FullscreenMode.bmp</file>
+        <file>Blue/Goto%20Bookmarks.bmp</file>
+        <file>Blue/Goto%20Line.bmp</file>
+        <file>Blue/Help.bmp</file>
+        <file>Blue/Make.bmp</file>
+        <file>Blue/Minimize%20All.bmp</file>
+        <file>Blue/MS-DOS.bmp</file>
+        <file>Blue/New.bmp</file>
+        <file>Blue/New2.bmp</file>
+        <file>Blue/Next.bmp</file>
+        <file>Blue/OK.bmp</file>
+        <file>Blue/Open.bmp</file>
+        <file>Blue/Package Manager.bmp</file>
+        <file>Blue/Paste.bmp</file>
+        <file>Blue/Preferences.bmp</file>
+        <file>Blue/Previous.bmp</file>
+        <file>Blue/Print.bmp</file>
+        <file>Blue/Project of Project Manager.bmp</file>
+        <file>Blue/Project.bmp</file>
+        <file>Blue/Properties.bmp</file>
+        <file>Blue/Rebuild%20All.bmp</file>
+        <file>Blue/Redo.bmp</file>
+        <file>Blue/Remove.bmp</file>
+        <file>Blue/Replace.bmp</file>
+        <file>Blue/Resource.bmp</file>
+        <file>Blue/Save.bmp</file>
+        <file>Blue/Save%20All.bmp</file>
+        <file>Blue/Save%20As.bmp</file>
+        <file>Blue/Setup.bmp</file>
+        <file>Blue/Toolbars.bmp</file>
+        <file>Blue/Tutorial.bmp</file>
+        <file>Blue/Typewriter.bmp</file>
+        <file>Blue/Undo.bmp</file>
+        <file>Blue/Window.bmp</file>
+    </qresource>
+    <qresource prefix="/Gnome">
+        <file>Gnome/About.bmp</file>
+        <file>Gnome/Add.bmp</file>
+        <file>Gnome/Arrange Icons.bmp</file>
+        <file>Gnome/Bloodshed Homepage.bmp</file>
+        <file>Gnome/Bookmarks.bmp</file>
+        <file>Gnome/Check for Update.bmp</file>
+        <file>Gnome/Close.bmp</file>
+        <file>Gnome/Compile And Run.bmp</file>
+        <file>Gnome/Compile.bmp</file>
+        <file>Gnome/Compiler Options.bmp</file>
+        <file>Gnome/Compiler Results.bmp</file>
+        <file>Gnome/Compiler ResultsX.bmp</file>
+        <file>Gnome/Copy.bmp</file>
+        <file>Gnome/Cut.bmp</file>
+        <file>Gnome/Debug.bmp</file>
+        <file>Gnome/Delete.bmp</file>
+        <file>Gnome/Down.bmp</file>
+        <file>Gnome/Environment Options.bmp</file>
+        <file>Gnome/Execute.bmp</file>
+        <file>Gnome/Exit.bmp</file>
+        <file>Gnome/Explorer.bmp</file>
+        <file>Gnome/Export.bmp</file>
+        <file>Gnome/Find.bmp</file>
+        <file>Gnome/Goto Bookmarks.bmp</file>
+        <file>Gnome/Goto Line.bmp</file>
+        <file>Gnome/Help.bmp</file>
+        <file>Gnome/Make.bmp</file>
+        <file>Gnome/Minimize All.bmp</file>
+        <file>Gnome/MS-DOS.bmp</file>
+        <file>Gnome/New.bmp</file>
+        <file>Gnome/New2.bmp</file>
+        <file>Gnome/Next.bmp</file>
+        <file>Gnome/Open.bmp</file>
+        <file>Gnome/Paste.bmp</file>
+        <file>Gnome/Preferences.bmp</file>
+        <file>Gnome/Previous.bmp</file>
+        <file>Gnome/Print.bmp</file>
+        <file>Gnome/Project.bmp</file>
+        <file>Gnome/Properties.bmp</file>
+        <file>Gnome/Rebuild All.bmp</file>
+        <file>Gnome/Redo.bmp</file>
+        <file>Gnome/Remove.bmp</file>
+        <file>Gnome/Replace.bmp</file>
+        <file>Gnome/Resource.bmp</file>
+        <file>Gnome/Save All.bmp</file>
+        <file>Gnome/Save As.bmp</file>
+        <file>Gnome/Save.bmp</file>
+        <file>Gnome/Setup.bmp</file>
+        <file>Gnome/Toolbars.bmp</file>
+        <file>Gnome/Tutorial.bmp</file>
+        <file>Gnome/Typewriter.bmp</file>
+        <file>Gnome/Undo.bmp</file>
+        <file>Gnome/Window.bmp</file>
+    </qresource>
+    <qresource prefix="/word">
+        <file>Others/CKeyWords</file>
+    </qresource>
+</RCC>
